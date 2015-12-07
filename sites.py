@@ -7,7 +7,7 @@ from update_checker import *
 class KuCs(UpdateChecker):
 
     def __init__(self):
-        name = '神戸大学情報知能工学科教学掲示板'
+        name = '情報知能工学科掲示板'
         url  = 'http://www.csi.kobe-u.ac.jp/cs/site/student/kyougaku.html'
         UpdateChecker.__init__(self,name,url)
 
@@ -29,7 +29,7 @@ class KuCs(UpdateChecker):
     
 class KuCommon(UpdateChecker):
     def __init__(self):
-        name = '神戸大学国際教養教育院'
+        name = '国際教養教育院掲示板'
         url  = 'http://www.iphe.kobe-u.ac.jp/zengaku.htm#'
         UpdateChecker.__init__(self,name,url)
 

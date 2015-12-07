@@ -74,7 +74,7 @@ if __name__ == '__main__' :
     #check
     flg = False
     mail_contents = ''
-    twitter_contents = '[Auto] Updated Following sites\r\n'
+    twitter_contents = '[自動] サイト更新情報\r\n'
     
     for site in sites:
         is_updated,new_contents = site.check_update()
@@ -92,9 +92,9 @@ if __name__ == '__main__' :
             
     if flg :
         if args.is_mail:
-            print(mail_contents)
-            #send_ku_mail(args.user,args.password,'サイト更新情報',mail_contents)
+            #print(mail_contents)
+            send_ku_mail(args.user,args.password,'サイト更新情報',mail_contents)
         if args.is_tweet:
-            print (twitter_contents)
-            #send_twitter(APP_NAME,args.consumer_key,args.consumer_secret,twitter_contents)
+            #print (twitter_contents)
+            send_twitter(APP_NAME,args.consumer_key,args.consumer_secret,twitter_contents)
         
