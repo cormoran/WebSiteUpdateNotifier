@@ -5,3 +5,4 @@ run.sh
 log/*
 old/*
 website_update_check
+.*
